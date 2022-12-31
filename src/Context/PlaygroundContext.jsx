@@ -44,7 +44,7 @@ const PlaygroundProvider = ({ children }) => {
                     code: languageMap["cpp"].defaultCode,
                 },
                 [uuid()]: {
-                    name: "Array",
+                    title: "Array",
                     language: "javascript",
                     code: languageMap["javascript"].defaultCode,
                 },
@@ -59,6 +59,7 @@ const PlaygroundProvider = ({ children }) => {
         }
         return JSON.parse(localData);
     })
+    
 
     useEffect(() => {
         localStorage.setItem('playgrounds-data', JSON.stringify(folders));
