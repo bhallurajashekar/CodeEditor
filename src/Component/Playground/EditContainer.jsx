@@ -76,7 +76,7 @@ function EditorContainer({
                                 cardId: playgroundId,
                             }
                         })} />
-                        <button className=' font-normal  rounded-full p-2 bg-[#0097d7]'>
+                        <button className=' font-normal  rounded-full p-2 bg-[#0097d7]' onClick={saveCode}>
                             Save code
                         </button>
                     </div>
